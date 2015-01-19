@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> Test </title>
+</head>
+<body>
+
+
+
+    <script>
+       localStorage.setItem('saludo', 'bienvenido a localStorage')
+       localStorage.setItem('1', '001')
+        valor = localStorage.getItem('saludo');
+        alert("Tenemos " + localStorage.length + " items" )
+        //localStorage.removeItem('1')
+        persona = {
+            nombre: "Archi",
+            edad: 32,
+            puesto: "Developer"
+        };
+
+        localStorage.dev = JSON.stringify(persona)
+        alert(localStorage.dev)
+        var dev = JSON.parse(localStorage.dev);
+        alert(typeof dev)
+
+    </script>
+</body>
+</html>
